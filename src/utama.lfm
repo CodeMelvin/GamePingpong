@@ -1,0 +1,91 @@
+object Main: TMain
+  Left = 783
+  Height = 1131
+  Top = 395
+  Width = 1391
+  Caption = 'Main'
+  ClientHeight = 1131
+  ClientWidth = 1391
+  DesignTimePPI = 144
+  KeyPreview = True
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  object GameCanvas: TImage
+    Left = 24
+    Height = 1012
+    Top = 132
+    Width = 1815
+  end
+  object ShapePaddle1: TShape
+    Left = 36
+    Height = 120
+    Top = 396
+    Width = 30
+  end
+  object ShapePaddle2: TShape
+    Left = 1792
+    Height = 120
+    Top = 396
+    Width = 30
+  end
+  object ShapeBall: TShape
+    Left = 928
+    Height = 45
+    Top = 471
+    Width = 45
+    Shape = stCircle
+  end
+  object LabelPlayer: TLabel
+    Left = 24
+    Height = 36
+    Top = 96
+    Width = 193
+    Caption = 'Skor Player'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object LabelAI: TLabel
+    Left = 1728
+    Height = 36
+    Top = 96
+    Width = 114
+    Caption = 'Skor AI'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object ButtonMulai: TButton
+    Left = 24
+    Height = 38
+    Top = 14
+    Width = 112
+    Caption = 'Mulai'
+    TabOrder = 0
+    OnClick = ButtonMulaiClick
+  end
+  object ButtonReset: TButton
+    Left = 168
+    Height = 38
+    Top = 14
+    Width = 112
+    Caption = 'Reset'
+    TabOrder = 1
+    OnClick = ButtonResetClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 20
+    OnTimer = Timer1Timer
+    Left = 912
+    Top = 152
+  end
+end
