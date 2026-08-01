@@ -47,7 +47,7 @@ A classic Ping-Pong arcade game built from scratch in **Object Pascal** using th
 ```
 GamePingpong/
 ├── assets/         # Demo GIF
-├── src/            # Pascal source files & compiled exe
+├── src/            # Pascal source files (the compiled .exe is published via Releases)
 └── README.md
 ```
 
